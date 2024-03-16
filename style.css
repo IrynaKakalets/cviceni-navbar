@@ -1,5 +1,9 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: sans-serif;
@@ -9,6 +13,31 @@ body {
 .hlavicka {
 	background-color: #3498db;
 	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar {
+	display: flex;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: flex;
+	list-style-type: none;
+	margin: 1px;
+	padding: 0;
+}
+
+.logo {
+	padding: 10px 20px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 a {
@@ -16,6 +45,8 @@ a {
 	padding: 5px 15px;
 	color: white;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
 }
 
 a:hover {
